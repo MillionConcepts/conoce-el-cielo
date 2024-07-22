@@ -1,4 +1,4 @@
-#Inicio
+# Inicio
 
 Este documento, junto con su notebook complementario, tiene como objetivo enseñar lo necesario para poder utilizar el contenido interactivo en: _conoce-el-cielo_ . Incluye instrucciones sobre:
 
