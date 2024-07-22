@@ -64,7 +64,7 @@ Durante el proceso de instalación, simplemente acepte los valores predeterminad
 1. Si tienes una versión anterior de Conda instalada en tu computadora y no la estás usando, la recomendación sería desinstalarla antes de instalar Miniforge. El resto de estas instrucciones de instalación tal vez no funcionen correctamente con diferentes versiones de Conda, y se pueden generar errores al tener varias versiones de Conda instaladas en la misma computadora.
 2. Asegúrate de seguir la versión de las instrucciones para tu sistema operativo instalado. En MacOS, se debe ingresar el comando en las instrucciones en la Terminal programa a menos que tenga una consola preferida diferente.
 3. Si descargas el instalador haciendo click en un enlace en lugar de usar un comando shell, asegúrate de elegir la versión "Miniforge3" del instalador, y no la "Miniforge-pypy3", ya que esta última no es recomendable para este proyecto.
-También asegúrate de elegir la versión que coincida con tu sistema operativo. [y arquitectura de CPU](#what-kind-of-architecture-am-i-using - qué-tipo-de-arquitectura-estoy-usando).
+También asegúrate de elegir la versión que coincida con tu sistema operativo. [y arquitectura de CPU](#qué-tipo-de-arquitectura-estoy-usando).
 4. Si tienes problemas, hay muchos tutoriales en Internet acorde a cada duda.
 
 ### 2. Instalando el contenido de _conoce-el-cielo_ 
