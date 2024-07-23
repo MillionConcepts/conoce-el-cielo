@@ -1,11 +1,11 @@
 # Inicio
 
-Este documento, junto con su notebook complementario, tiene como objetivo enseñar lo necesario para poder utilizar el contenido interactivo en: _conoce-el-cielo_ . Incluye instrucciones sobre:
+Este documento, junto con su Notebook complementario, tiene como objetivo enseñar lo necesario para poder utilizar el contenido interactivo en: _conoce-el-cielo_ . Incluye instrucciones sobre:
 
 1. Descargar del contenido de GitHub
 2. Como instalar y crear entornos en Conda
-3.  Ejecutar el servidor Jupyter
-4.  Trabajar con un cuaderno Jupyter
+3. Ejecutar el servidor Jupyter
+4. Trabajar con un cuaderno Jupyter
 
 Si es que ya sabes como ejecutar los pasos del 1 al 4, la recomendación sería saltarte este documento.
 
@@ -18,15 +18,11 @@ Si no estás segura o seguro de tu nivel de familiaridad, te recomendamos ir a l
 
 Jupyter Notebook es un entorno de codificación interactivo. Puede funcionar código en
 [varios lenguajes de programación diferentes](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels),
-y también puede presentar o graficar texto formateado y contenido multimedia. _conoce-el-cielo_  lo usa para permitirte ejecutar código Python. (En secciones posteriores, daremos a conocer más detalles sobre cómo funciona)
+y también puede presentar o graficar texto formateado y contenido multimedia. _conoce-el-cielo_  lo usa para permitirte ejecutar código Python. (En secciones posteriores, daremos a conocer más detalles sobre cómo funciona).
 
 Es importante saber que aunque uses Jupyter Notebook en un navegador, eso no significa que deba conectarse a Internet. La mayoría de la gente que usan Jupyter Notebooks simplemente ejecutan el servidor "localmente" (es decir, en su propias computadoras), porque es más rápido y no tienes que generar passwords ni contraseñas para hacerlo seguro. Si sigues las instrucciones de este documento, estarás ejecutando Jupyter en tu propia máquina.
-Esto significa que cualquier cambio que realices en los archivos de Notebook serán totalmente privados, puedes hacer una copia de seguridad de tus cambios como quieras y ni siquiera se necesitará una conexión de red para ejecutarlos (aunque algunos de ellos
-contienen secciones específicas de código para descargar datos de Internet).
-
-Otra aclaración: la gente suele usar la frase "Jupyter Notebook" para
-referirse tanto al entorno de codificación como a los archivos individuales de Notebook, que
-puede resultar confuso. Procederemos a tener cuidado con eso y escribir "Archivo Notebook Jupyter" siempre que hablemos de un archivo específico en lugar del ambiente de programación.
+Esto significa que cualquier cambio que realices en los archivos de Notebook serán totalmente privados, puedes hacer una copia de seguridad de tus cambios como quieras y ni siquiera se necesitará una conexión de red para ejecutarlos (aunque algunos de ellos contienen secciones específicas de código para descargar datos de Internet).
+Otra aclaración: la gente suele usar la frase "Jupyter Notebook" para referirse tanto al entorno de codificación como a los archivos individuales de Notebook, que puede resultar confuso. Procederemos a tener cuidado con eso y escribir "Archivo Notebook Jupyter" siempre que hablemos de un archivo específico en lugar del ambiente de programación.
 
 ## Requisitos Técnicos
 
@@ -34,15 +30,13 @@ puede resultar confuso. Procederemos a tener cuidado con eso y escribir "Archivo
 
 Las siguientes instrucciones te permitirán instalar  _conoce-el-cielo_ en la mayoría de las computadoras portátiles y de escritorio. Debe poder ejecutarse en Windows, MacOS o Linux. (Adicionalmente, debería ser factible configurarlo en un Chromebook, teléfono o tablet, pero es complicado y no operaría correctamente, por lo que no ofrecemos apoyo para esas plataformas).
 
-Tu computadora debe tener al menos 4 GB de RAM, 4 GB de espacio libre en disco,
-y una arquitectura de CPU de 64 bits. La mayoría de las computadoras de 10 años de antigüedad funcionan bien.
+Tu computadora debe tener al menos 4 GB de RAM, 4 GB de espacio libre en disco, y una arquitectura de CPU de 64 bits. La mayoría de las computadoras de 10 años de antigüedad funcionan bien.
 
 También, necesitarás una conexión a Internet para realizar la instalación inicial y para ejecutar las partes del contenido que descargan datos científicos. No hay ejecución de una red en tiempo real, por lo que la conexión no tiene por que ser rápida, pero en caso de que sea muy lento o inestable, podría requerir varios intentos llegando a ser frustrante.
 
 ### Excepciones
 
-Si estás usando una computadora del trabajo o de la escuela que no te da permiso para instalar el software, estas instrucciones no funcionarán. Necesitarás hablar con
-el administrador del sistema para averiguar cómo realizar las configuraciones necesarias.
+Si estás usando una computadora del trabajo o de la escuela que no te da permiso para instalar el software, estas instrucciones no funcionarán. Necesitarás hablar con el administrador del sistema para averiguar cómo realizar las configuraciones necesarias.
 
 De manera similar, si estás en una red que restringe el acceso a websites, es posible que necesites hablar con el administrador de sistemas para solicitar acceso y poder descargar el software y datos.
 
@@ -53,7 +47,6 @@ Para ejecutar código Python en un Jupyter Notebook, necesitas tener instalado e
 ### 1. Instalando Conda
 
 Consideramos que la mejor manera de configurar Python para la mayoría de los proyectos de código abierto es usando el administrador de paquetes de Conda para descargar software desde un 'canal' llamado “conda-forge”.
-
 Hemos preferido una versión de Conda proporcionada por la comunidad conda-forge llamada “Miniforge”. Lo instalaremos ahora y luego usaremos el software de administración incluido `conda` para instalar dependencias específicas para *conociendo en el siguiente paso.
 [Puede obtener el instalador de Miniforge desde su página de GitHub.](https://github.com/conda-forge/miniforge)
 Solo es cuestion de ir a esa página y seguir las instrucciones en la sección "Instalar".
@@ -82,7 +75,7 @@ instala un programa de terminal llamado 'Miniforge Prompt', que luego de su inst
 Desde la línea de comando, ejecuta `conda install -n base git`. 
 Esto significa "instalar el paquete `git` en el entorno base de conda" (explicaremos más sobre entornos en breve). Di sí a las indicaciones. Ahora tienes un `git`!
 
-#### Descargar _Conociendo el Cielo_
+#### Descargar _conoce-el-Cielo_
 
 Define y posiciónate en la carpeta en la que deseas descargar el contenido de *conociendo mediante el uso del comando ‘cd’. Por ejemplo, si deseas descargarlo en una subcarpeta de una carpeta en tu directorio raíz llamada 'proyectos', ejecuta “cd proyectos”. Si deseas, también puedes descargarlo en una subcarpeta justo en tu directorio raíz.
 
@@ -93,12 +86,10 @@ Ahora, si ejecutas `ls`, deberías ver una nueva carpeta llamada _conoce-el-ciel
 ### Creando un Entorno Conda
 
 Conda ayuda a que las dependencias de Python se organicen y ejecuten correctamente mediante la creación de "entornos" distintos y asegurarse de que todo el software de un entorno sea mutuamente compatible.
-El texto `(base)` que se ve justo antes de la línea de código es una señal de Conda que
-estás en su entorno llamado 'base', que es el entorno predeterminado creado con cada instalación de Conda.
+El texto `(base)` que se ve justo antes de la línea de código es una señal de Conda que estás en su entorno llamado 'base', que es el entorno predeterminado creado con cada instalación de Conda.
 
 En general, es una buena práctica crear un entorno Conda separado para cada proyecto Python. _conoce-el-cielo_  incluye un archivo de entorno Conda - una especificación para un entorno Conda que puede ejecutar todo su contenido. Para crear ese entorno, se debe ejecutar ‘cd know-the-sky’ para pasar al repositorio carpeta, luego ejecutar `conda env create -f environment.yml`. Esto significa "crear un Nuevo entorno Conda basado en la especificación del archivo Environment.yml."
 Responda sí a cualquier indicación y espere a que `conda` descargue y organice los paquetes de información.
-
 
 Después de que ‘conda’ finalice esta etapa, puedes activar el entorno ejecutando `conda activate conoce-el-cielo`. Cuando ejecutas ese comando, el mensaje `(base)` delante de su mensaje cambiará a _conoce-el-cielo_ . Cuando un ambiente está operando correctamente, los comandos de shell que actives, ejecutarán las versiones del software instalado en ese entorno. 
 
@@ -130,7 +121,6 @@ La mayor diferencia entre las línea de comandos de sesiones interactivas tradic
 
 Esto genera una gran flexibilidad. Puedes examinar el output de pasos individuales antes de continuar con la siguiente línea de código, de forma que puedes averiguar lo que debas escribir en la siguiente celda de código, o decidir si regresar y cambiar algo. Esto hace que los Jupyter Notebooks sean muy populares en aplicaciones que van desde la exploración de datos, así como casos de estudio académicos, o incluso Tecnologías de Información. [Esta flexibilidad también tiene algunas desventajas.](#desventajas-de-los-jupyter-notebooks)
 
-
 ## Apéndices
 
 ### Qué tipo de Arquitectura estoy usando?
@@ -153,7 +143,7 @@ Nos encantan los Jupyter Notebooks, pero no son recomendables para todas las nec
 
 ## Conceptos Requeridos de Python
 
-Si alguna de las expresiones en uno de estos bloques de código no te hacen sentido, te recomendamos repasar esa parte de su conocimiento de Python antes de comenzar el curso.
+Si alguna de las expresiones en uno de estos bloques de código no te hacen sentido, te recomendamos estudiar esa parte de su conocimiento de Python antes de comenzar el curso.
 
 Te recomendamos la documentación oficial de Python como primera referencia para
 conceptos fundamentales de Python y hemos incluido referencias a secciones en cada bloque. 
