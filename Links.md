@@ -13,3 +13,7 @@ https://moon.nasa.gov/resources/540/why-the-moon/
 Everything you need to know about the Moon:
 
 https://www.astronomy.com/observing/everything-you-need-to-know-about-the-moon/
+
+85 Inspiring Space Quotes for All Mankind:
+
+https://www.keepinspiring.me/inspiring-space-quotes/
