@@ -150,7 +150,7 @@ conceptos fundamentales de Python y hemos incluido referencias a secciones en ca
 'PT' se refiere a secciones del [tutorial oficial de Python (Python Tutorial)](https://docs.python.org/es/3/tutorial/index.html). 
 'PSL' hace referencia a secciones de la [referencia de la biblioteca estándar de Python (Python Standard Library)](https://docs.python.org/es/3/library/index.html#library-index).
 
-### operadores básicos (PT 3.1, tipos integrados de PSL)
+### Operadores Básicos (PT 3.1, tipos integrados de PSL)
 
 ```python
 1 == 1
