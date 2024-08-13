@@ -151,3 +151,158 @@ conceptos fundamentales de Python y hemos incluido referencias a secciones en ca
 'PSL' hace referencia a secciones de la [referencia de la biblioteca estándar de Python (Python Standard Library)](https://docs.python.org/es/3/library/index.html#library-index).
 
 ### operadores básicos (PT 3.1, tipos integrados de PSL)
+
+```python
+1 == 1
+La condición verdadera se cumple
+2 == 1 + 2 - 1 * 1 / 1
+"a" en "apple" (escrita en Inglés)
+"1" + "1" == "11"
+1 < 2
+2 > 1
+1 <= 1
+2 >= 2
+5 % 3 == 2
+5 // 3 == 1
+```
+
+### Definición de Variables (PT 3.1)
+
+```python
+x = 1
+y = x
+x, y = 1, 2
+```
+
+### Tipos Integrados y Estructuras de Datos (PT 3.1, PT 5.1-5.5, Tipos Integrados PSL) 
+
+```python 
+int(2) == 2 
+str(1) = = "1" 
+float(2.1) == 2.1
+int(2.1) == 2
+[1, 2, 3, 4]
+(1, 2, 3, 4)
+{'a': 1, 'b': 2}
+{1, 2, 3} == set( (1, 2, 3, 3, 3))
+[1, 2, 3] + [3, 4, 5] == [1, 2, 3, 3, 4, 5]
+list({'a': 1 , 'b': 2}.keys()) == ['a', 'b']
+list({'a': 1, 'b': 2}.values()) == [1, 2] ```
+
+
+### Extracción y Definición de Atributos y Elementos (PT 3.1, PT 5.1-5.5)
+
+```python
+dictionary = {"a": 1, "b": 2}
+dictionary["a"] == 1
+dictionary["b"] = 3
+dictionary["b"] == 3
+
+sequence = [1, 2, 3, 4]
+sequence[0] == 1 
+sequence[3] = 2
+sequence[3] == 2
+sequence[0:2] == [1, 2]
+
+# 'position' es una Instancia de una Clase Hipotética
+# con atributos 'x' e 'y'
+posición.x = 1
+position.x == 1 significa que es verdadero
+```
+
+### Funciones Integradas Básicas (Funciones integradas de PSL)
+
+```python
+len([1, 2, 3, 4]) == 4
+abs(- 1) == 1
+sum((1, 2, 3, 4)) == 10
+any([True, True, False]) es Verdadero
+all([True, True, False]) es Falso
+print('hola mundo')
+list(range(5)) == [0, 1, 2, 3, 4]
+```
+
+# ## Estructuras if-then-else (PT 4.1, 4.4)
+
+```python
+x = 1
+if x < 2:
+print("lograremos esta declaración")
+elif x == 1:
+print("esto es verdadero, pero no lograremos esta declaración")
+else:
+print("definitivamente no lograremos esta declaración")
+```
+
+### Estructuras Cíclicas “Loop” (PT 4.1-4.4)
+
+```python
+cache = []
+for n in range(10):
+if n % 2 == 1:
+continue
+cache.append(n)
+cache == [0, 2, 4, 6, 8]
+
+i, cache_2 = 0, []
+while len(cache_2) < 5:
+if i % 2 != 0:
+cache_2.append(i)
+i += 1
+cache_2 == [1, 3, 5, 7, 9]
+```
+
+### Sentencias Try-Except (PT 8.3)
+
+```python
+try:
+x = {'a': 1}['b']
+except KeyError:
+print('oops')
+finally:
+print ('todo está listo')
+```
+
+### Declaraciones y Llamadas a Funciones Básicas (PT 4.7-4.8)
+
+```python
+def f(x, y, z=3):
+return x + y * z
+
+f(1, 2 ) == 7
+f(y=2, x=1, z=4) == 9
+
+string = "hola"
+string.upper() == "HOLA"
+```
+
+### Importando Módulos (PT 6-6.1)
+
+```python
+import statistics
+statistics.mean((1, 3, 5)) == 3
+
+from math import cos
+cos(0) == 1
+
+
+import datetime as dt
+dt.datetime(2024, 1, 1, 1, 1, 1).month == 1
+```
+
+### F-Strings (PT 7.1. 1)
+
+```python
+x, y, z = 1, "..", 3
+f"{x}_{len(y)}_{z + 1}" == "1_2_4"
+```
+
+### Entradas y Salidas (“Inputs/Outputs”) de Archivos (PT 7.2)
+
+```python
+with open("/ruta/al/archivo") as stream:
+text = stream.read()
+
+with open("/ruta/al/archivo", "w") as stream:
+stream.write("un texto")
+` "
