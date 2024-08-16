@@ -17,3 +17,8 @@ https://www.astronomy.com/observing/everything-you-need-to-know-about-the-moon/
 85 Inspiring Space Quotes for All Mankind:
 
 https://www.keepinspiring.me/inspiring-space-quotes/
+
+
+What Time Is It on the Moon? - New lunar time proposal is a first step for Moon GPS.
+
+https://www.nist.gov/news-events/news/2024/08/what-time-it-moon
